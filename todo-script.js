@@ -74,7 +74,7 @@ for (let todo of todoList) {
 
 function addTodo() {
     let userInputElement = document.getElementById("todoUserInput");
-    let userInputValue = userInputElement.value;
+    let userInputValue = userInputElement.value.trim();
     //adding alert incase use input is null
     if (userInputValue === "") {
         alert("Enter Valid Text");
